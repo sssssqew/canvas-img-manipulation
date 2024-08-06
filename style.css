@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: black;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.image__container{
+    position: relative;
+    width: 400px;
+
+}
+img{
+    width: 100%;
+    opacity: 0;
+}
+canvas{
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+canvas.active{
+    opacity: 1;
+}
